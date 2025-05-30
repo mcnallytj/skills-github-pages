@@ -1,6 +1,5 @@
 ---
 layout: default
-
 title: "Tom McNally: Welcome to my blog!"
 ---
 
