@@ -87,10 +87,12 @@ blockquote {
 
 
 .hero h1 {
-  font-size: 3rem;
-  color: #0ff;
-  text-shadow: 0 0 8px #0ff, 0 0 16px #000;
-  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffff;
+  margin-bottom: 2rem;
   font-weight: 900;
 }
 
