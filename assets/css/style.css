@@ -66,10 +66,12 @@ blockquote {
 
 .hero h1 {
   font-size: 3rem;
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #000;
   margin-bottom: 0.5rem;
+  font-weight: 900;
 }
+
 
 .hero p {
   font-size: 1.2rem;
