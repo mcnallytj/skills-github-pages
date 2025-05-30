@@ -30,7 +30,7 @@ Turned a Raspberry Pi into a retro gaming system.
 
 Styled with Markdown and hosted with GitHub Pages.
 
-Want to learn more? Check out my GitHub
+Want to learn more? Check out my GitHub (https://github.com/mcnallytj)
 
 Built with passion, powered by tech.
 
