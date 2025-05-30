@@ -1,10 +1,5 @@
-
-
-layout: default
-
-
-
 ---
+layout: default
 Tom McNally: Welcome to my blog!
 ---
 
