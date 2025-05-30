@@ -40,26 +40,18 @@ blockquote {
   box-shadow: 0 0 20px #00ffff55;
 }
 .hero-sub {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #aef;
-  white-space: nowrap;
   overflow: hidden;
-  position: relative;
+  white-space: nowrap;
+  display: block;
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 2.5rem;
+  box-sizing: border-box;
+  animation: marquee 20s linear infinite;
 }
 
-.hero-sub::before {
-  content: "Welcome to my blog — a hub for IoT, Raspberry Pi, Arduino & passion projects.";
-  position: absolute;
-  will-change: transform;
-  animation: scroll-left 20s linear infinite;
-}
-
-@keyframes scroll-left {
+@keyframes marquee {
   0% {
     transform: translateX(100%);
   }
@@ -67,6 +59,7 @@ blockquote {
     transform: translateX(-100%);
   }
 }
+
 
 
 @keyframes typing {
