@@ -53,31 +53,31 @@ blockquote {
 }
 
 .hero-sub {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #aef;
-  white-space: nowrap;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
-  position: relative;
-  height: 2.5rem;
+  margin-top: 1rem;
 }
 
 .hero-sub span {
   display: inline-block;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aef;
   padding-left: 100%;
-  animation: marquee 20s linear infinite;
+  animation: scroll-left 18s linear infinite;
 }
 
-@keyframes marquee {
+@keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
 
 /* === NAVIGATION BAR === */
 .navbar {
