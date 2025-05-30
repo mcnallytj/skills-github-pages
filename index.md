@@ -1,7 +1,8 @@
 ---
 layout: default
-title: " Tom McNally: Welcome to my blog!"
+title: "Tom McNally: Welcome to my blog!"
 ---
+
  # Tech Projects 
  
 Here are some of the projects I have been working on in 2025.
