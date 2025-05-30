@@ -1,8 +1,11 @@
+/* === BASE STYLES === */
 body {
   background-color: #0e0e2c;
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 2rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3 {
@@ -31,6 +34,8 @@ blockquote {
   padding-left: 1rem;
   margin: 1rem 0;
 }
+
+/* === HERO SECTION === */
 .hero {
   background-color: #0d0d1a;
   padding: 4rem 2rem 2rem;
@@ -47,7 +52,15 @@ blockquote {
   margin-bottom: 1rem;
 }
 
-/* Scrolling marquee effect */
+.hero-sub {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aef;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
@@ -55,25 +68,40 @@ blockquote {
   box-sizing: border-box;
 }
 
-.marquee-text {
-  display: inline-block;
-  font-size: 1.5rem;
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* === NAVIGATION BAR === */
+.navbar {
+  background-color: rgba(0, 255, 255, 0.05);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  border-bottom: 1px solid #00ffff44;
+  box-shadow: 0 2px 12px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  color: #00ffff;
+  text-decoration: none;
   font-weight: bold;
-  color: #aef;
-  padding-left: 100%;
-  animation: scroll-left 18s linear infinite;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.navbar a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
 }
 
-
+/* === PROJECT CARDS === */
 .project-card {
   background: rgba(0, 255, 255, 0.05);
   border: 1px solid #00ffff;
@@ -97,59 +125,4 @@ blockquote {
 .project-card p {
   color: #ccc;
 }
-
-
-.hero h1 {
-  font-size: 3.5rem;
-  color: #00ffff;
-  text-align: center;
-  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
-  margin-bottom: 1rem;
-  font-weight: 900;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: #ffffffcc;
-}
-/* === NAVIGATION BAR === */
-.navbar {
-  background-color: rgba(0, 255, 255, 0.05);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  border-bottom: 1px solid #00ffff44;
-  box-shadow: 0 2px 12px rgba(0, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-}
-.navbar a {
-  color: #00ffff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.2s ease-in-out;
-}
-.navbar a:hover {
-  color: #ff00ff;
-  text-shadow: 0 0 5px #ff00ff;
-}
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.hero-sub {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #aef;
-  padding-left: 100%;
-  animation: marquee 20s linear infinite;
-}
-
 
