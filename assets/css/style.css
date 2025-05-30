@@ -60,18 +60,6 @@ blockquote {
   }
 }
 
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #0ff }
-}
-
 .project-card {
   background: rgba(0, 255, 255, 0.05);
   border: 1px solid #00ffff;
@@ -98,16 +86,14 @@ blockquote {
 
 
 .hero h1 {
-  font-size: 3.2rem;
-  font-weight: 900;
+  font-size: 3.5rem;
+  color: #00ffff;
   text-align: center;
-  color: #fff;
-  background: linear-gradient(90deg, #ff00cc, #00ffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  text-shadow: 0 0 10px #ff00cc66, 0 0 20px #00ffff88;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+  margin-bottom: 1rem;
+  font-weight: 900;
 }
+
 
 
 
