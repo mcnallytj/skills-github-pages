@@ -45,12 +45,20 @@ blockquote {
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
+  font-size: 4rem;
+  color: #00ffff;
   font-weight: 900;
+  text-align: center;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
+
 
 .hero-sub {
   width: 100%;
