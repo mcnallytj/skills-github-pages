@@ -93,10 +93,6 @@ blockquote {
   margin-bottom: 1rem;
   font-weight: 900;
 }
-
-
-
-
 .hero p {
   font-size: 1.2rem;
   color: #ffffffcc;
@@ -115,7 +111,6 @@ blockquote {
   box-shadow: 0 2px 12px rgba(0, 255, 255, 0.1);
   backdrop-filter: blur(6px);
 }
-
 .navbar a {
   color: #00ffff;
   text-decoration: none;
@@ -123,9 +118,28 @@ blockquote {
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
-
 .navbar a:hover {
   color: #ff00ff;
   text-shadow: 0 0 5px #ff00ff;
 }
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-sub {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aef;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
 
