@@ -71,7 +71,6 @@ blockquote {
   }
 }
 
-
 .hero-sub {
   width: 100%;
   overflow: hidden;
@@ -97,7 +96,6 @@ blockquote {
     transform: translateX(-100%);
   }
 }
-
 
 /* === NAVIGATION BAR === */
 .navbar {
