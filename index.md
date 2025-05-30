@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="assets/css/style.css">
+
+
 ---
 Tom McNally: Welcome to my blog!
 ---
