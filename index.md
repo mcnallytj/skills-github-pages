@@ -2,10 +2,11 @@
 layout: default
 title: " Tom McNally: Welcome to my blog!"
 ---
-
+ # Tech Projects 
+ 
 Here are some of the projects I have been working on in 2025.
 
- # {{ Tech Projects }}
+
 
 Hi, I'm Tom — a tech enthusiast who loves building with IoT, Arduino, and Raspberry Pi.
 
