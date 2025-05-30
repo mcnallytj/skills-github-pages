@@ -32,33 +32,47 @@ blockquote {
   margin: 1rem 0;
 }
 .hero {
+  background-color: #0d0d1a;
+  padding: 4rem 2rem 2rem;
   text-align: center;
-  margin-bottom: 3rem;
-  padding: 4rem 2rem;
-  background: radial-gradient(circle at center, #0ff 10%, #0e0e2c 80%);
-  border-radius: 12px;
-  box-shadow: 0 0 20px #00ffff55;
-}
-.hero-sub {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #aef;
-  overflow: hidden;
-  white-space: nowrap;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  animation: marquee 20s linear infinite;
+  border-bottom: 1px solid #0ff;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
 }
 
-@keyframes marquee {
+.hero-title {
+  font-size: 3.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+/* Scrolling marquee effect */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.marquee-text {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aef;
+  padding-left: 100%;
+  animation: scroll-left 18s linear infinite;
+}
+
+@keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
 
 .project-card {
   background: rgba(0, 255, 255, 0.05);
